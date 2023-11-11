@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 *,
 *::before,
 *::after {
@@ -8,12 +9,12 @@
 
 body {
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Roboto sans-serif";
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1;

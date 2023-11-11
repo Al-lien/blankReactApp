@@ -8,7 +8,7 @@ This is setup template that allows you to start project faster.
 - .gitignore **.css.map
 - React-Router-Dom
 
-# Reset Project 
+# Change Project Name
 
 - Change name in package.json and package-lock.json
 <!--CMD + F and "vite-project" replace everything with "new-project-name" -->
@@ -18,10 +18,10 @@ This is setup template that allows you to start project faster.
 
 https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github
 
-- git remote add origin <REMOTE_URL>
+- git remote add origin <NEW_REMOTE_URL>
 <!-- set a new remote file -->
 
 - git remote -v
 <!-- Verify new remote -->
-> origin <REMOTE_URL> (fetch)
-> origin <REMOTE_URL> (push)
+> should show 👉 origin <NEW_REMOTE_URL> (fetch)
+> should show 👉 <NEW_REMOTE_URL> (push)

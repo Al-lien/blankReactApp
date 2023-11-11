@@ -12,6 +12,10 @@ function App() {
       <h2>How to change project name</h2>
       <br />
       <p>Change name in package.json(1) and package-lock.json(2)</p>
+      <br />
+      <hr />
+      <br />
+      <small>more info in README.md file</small>
     </>
   );
 }

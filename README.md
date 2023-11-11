@@ -6,6 +6,12 @@ This is setup template that allows you to start project faster.
 - App.css reset
 - Custom sass properties & utilities
 - .gitignore **.css.map
+- React-Router-Dom
+
+# Reset Project 
+
+- Change name in package.json and package-lock.json
+<!--CMD + F and "vite-project" replace everything with "new-project-name" -->
 
 # Reset GIT
 (https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)

@@ -1,0 +1,16 @@
+@import "./styles/utilities";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include viewPort;
+  @include flexboxColumn;
+  @include textStyle("Roboto sans-serif", 1rem, normal, 1, $black);
+}
+

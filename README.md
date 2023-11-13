@@ -25,3 +25,6 @@ https://docs.github.com/en/migrations/importing-source-code/using-the-command-li
 <!-- Verify new remote -->
 > should show 👉 origin <NEW_REMOTE_URL> (fetch)
 > should show 👉 <NEW_REMOTE_URL> (push)
+
+- rm -r .git .gitignore (chmod -R +w . might be necessary)
+<!-- delete git -->

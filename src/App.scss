@@ -1,5 +1,5 @@
 @import "./styles/utilities";
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 *,
 *::before,
@@ -9,9 +9,12 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+#root {
   @include viewPort;
   @include flexboxColumn;
-  @include textStyle("Roboto", sans-serif , 1rem, normal, 1, $black);
 }
 
+body {
+  @include textStyle("Roboto", sans-serif, 1rem, normal, 1, $black);
+}

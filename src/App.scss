@@ -9,12 +9,13 @@
   box-sizing: border-box;
 }
 
-body,
-#root {
+body {
+  @include textStyle("Roboto", sans-serif, 1rem, normal, 1, $black);
   @include viewPort;
   @include flexboxColumn;
 }
 
-body {
-  @include textStyle("Roboto", sans-serif, 1rem, normal, 1, $black);
+#root {
+  height: 100%;
+  width: 100%;
 }

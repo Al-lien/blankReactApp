@@ -29,3 +29,7 @@ dist-ssr
 *.css.map
 *.sass.map
 *.scss.map
+
+# environment file
+
+.env

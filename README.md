@@ -60,7 +60,7 @@ I strongly recommand you explore those differents tools repo and/or website so y
 
 - `git remote -v`
 <!-- Verify new remote -->
-> should show 👉 `origin <NEW_REMOTE_URL> (fetch)`
+> should show 👉 `origin <NEW_REMOTE_URL> (fetch)`\
 > should show 👉 `<NEW_REMOTE_URL> (push)`
 
 Check this amazing tuto, on [Git & Github](https://youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&si=MrwPuJGcRTkmewyQ).

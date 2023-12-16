@@ -1,30 +1,27 @@
 const express = require("express");
 
 const router = express.Router();
+const {
+  getData,
+  getSingleData,
+  createData,
+  updateData,
+  deleteData,
+} = require("../controllers/basicControllers");
 
 // GET ALL data
-router.get("/", (req, res) => {
-    res.status(200).json({message : "GET ALL data"})
-});
+router.get("/", getData);
 
 // GET SINGLE data
-router.get("/:id", (req, res) => {
-    res.status(200).json({message : "GET SINGLE data"})
-});
+router.get("/:id", getSingleData);
 
 // CREATE data
-router.post("/", (req, res) => {
-    res.status(200).json({message : "CREATE data"})
-});
+router.post("/", createData);
 
 // UPDATE data
-router.patch("/:id", (req, res) => {
-    res.status(200).json({message : "UPDATE data"})
-});
+router.patch("/:id", updateData);
 
 // DELETE data
-router.delete("/:id", (req, res) => {
-    res.status(200).json({message : "DELETE data"})
-});
+router.delete("/:id", deleteData);
 
 module.exports = router;

@@ -2,7 +2,7 @@ const express = require("express");
 
 const router = express.Router();
 const {
-  getData,
+  getAllData,
   getSingleData,
   createData,
   updateData,
@@ -10,7 +10,7 @@ const {
 } = require("../controllers/basicControllers");
 
 // GET ALL data
-router.get("/", getData);
+router.get("/", getAllData);
 
 // GET SINGLE data
 router.get("/:id", getSingleData);

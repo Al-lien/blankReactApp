@@ -1,6 +1,18 @@
+const db = require("../db/db");
+const testTable = process.env.TEST_TABLE;
+
 // GET ALL data
-const getData = async (req, res) => {
-  res.status(200).json({ message: "GET ALL data" });
+const getAllData = async (req, res) => {
+  const sql = `SELECT * FROM ${testTable}`;
+
+  db.query(sql, (err, results) => {
+    if (err) {
+      console.error("MySQL query error:", err);
+      res.status(500).send("Internal Server Error");
+    } else {
+      res.json(results);
+    }
+  });
 };
 
 // GET SINGLE data
@@ -23,4 +35,4 @@ const deleteData = async (req, res) => {
   res.status(200).json({ message: "DELETE data" });
 };
 
-module.exports = { getData, getSingleData, createData, updateData, deleteData };
+module.exports = { getAllData, getSingleData, createData, updateData, deleteData };

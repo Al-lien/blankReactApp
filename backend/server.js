@@ -9,8 +9,9 @@ const basicRoutes = require("./routes/basicRoutes");
 const app = express();
 
 // 👇 middleware
+/* parses the JSON data and makes it available in req.body */
 app.use(express.json());
-
+/* console.log path and request type  */
 app.use((req, res, next) => {
   console.log(req.path, req.method);
   next();

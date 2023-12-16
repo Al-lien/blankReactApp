@@ -18,6 +18,7 @@ I strongly recommand you explore those differents tools repo and/or website so y
 - [Nodemon](https://www.npmjs.com/package/nodemon)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
 - [React-router-dom](https://www.npmjs.com/package/react-router-dom)
+- [Mysql2](https://www.npmjs.com/package/mysql2)
 
 ## Frontend
 
@@ -27,12 +28,14 @@ I strongly recommand you explore those differents tools repo and/or website so y
 - Custom [Sass](https://github.com/sass/sass) properties & utilities
     - Sass isn't included in this project. Install it globally `npm install -g sass` or use vscode extension like [Live Sass Compiler](https://github.com/glenn2223/vscode-live-sass-compiler)
     -  .gitignore containing `**.css.map`
-- `pages`, `components`, `styles` directories.
+- `pages`, `components` & `styles` directories.
 
 ## Backend
 
 - server.js including express app, basic routes & middlewares
-- `routes` directory.
+- db.js connecting to your localhost mysql database
+    - don't forget to add and fill the `.env` file.
+- `db`, `routes` & `controllers` directories.
 
 ## Git
 

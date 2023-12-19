@@ -1,6 +1,7 @@
 require("dotenv").config();
 
 const express = require("express");
+const cors = require("cors");
 
 // 👇 import basic routes patern
 const basicRoutes = require("./routes/basicRoutes");
@@ -9,6 +10,11 @@ const basicRoutes = require("./routes/basicRoutes");
 const app = express();
 
 // 👇 middleware
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 /* parses the JSON data and makes it available in req.body */
 app.use(express.json());
 /* console.log path and request type  */

@@ -10,7 +10,7 @@ I strongly recommand you explore those differents tools repo and/or website so y
 - In **VSCode**, install plugins [Prettier - Code formatter](https://github.com/prettier/prettier-vscode) and [ESLint](https://github.com/Microsoft/vscode-eslint) and configure them.
 - Clone this repo, enter it.
 - Delete `.git` and initialize a new one (see below).
-- Run command `npm install`.
+- Run command `npm install` in `./backend` and `./frontend`.
 - Create environment files (`.env`) in both `backend` and `frontend`: you can copy `.env.sample` files as starters.
 
 ### Tools 🛠️

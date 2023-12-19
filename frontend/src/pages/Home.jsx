@@ -6,14 +6,12 @@ function Home() {
 
     useEffect(() => {
         const fetchData = async () => {
-            setLoaded(false);
             const response = await fetch("http://localhost:3000/api/basicRoutes");
 
             const json = await response.json();
 
             if (response.ok) {
                 setData(json);
-                setLoaded(true)
             }
 
         }

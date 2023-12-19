@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 function Home() {
 
     const [data, setData] = useState(null);
-    const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -21,8 +20,8 @@ function Home() {
         fetchData();
     }, [])
 
-    { loaded && console.log(data) }
-    
+    { data && console.log(data) }
+
     return (
         <div className="home">
             <h2>Home</h2>

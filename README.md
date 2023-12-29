@@ -1,4 +1,4 @@
-# Concept
+# Concept 📝
 
 (**In progress**, still working on it...)
 
@@ -31,7 +31,7 @@ I strongly recommand you explore those differents tools repo and/or website so y
     -  .gitignore containing `**.css.map`
 - `pages`, `components`, `styles` directories.
 
-## Backend
+## Backend 
 
 - server.js including express app, basic routes & middlewares
 - `routes` directory.
@@ -44,7 +44,7 @@ I strongly recommand you explore those differents tools repo and/or website so y
 > (`chmod -R +w .` might be necessary)
 <!-- Must be in the directory -->
 
-### Init GIT
+### Init GIT 🚀
 
 - `git init -b main`
 <!-- initialize git on main branch -->

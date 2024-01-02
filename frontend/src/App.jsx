@@ -1,4 +1,9 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
 
 // pages & components
 import Home from "./pages/Home";
@@ -6,17 +11,13 @@ import Home from "./pages/Home";
 // styles
 import "./App.css";
 function App() {
+  const router = createBrowserRouter(
+    createRoutesFromElements(<Route path="/" element={<Home />} />)
+  );
+
   return (
     <>
-      <div className="App">
-        <BrowserRouter>
-          <div className="pages">
-            <Routes>
-              <Route path="/" element={<Home />} />
-            </Routes>
-          </div>
-        </BrowserRouter>
-      </div>
+      <RouterProvider router={router} />
     </>
   );
 }

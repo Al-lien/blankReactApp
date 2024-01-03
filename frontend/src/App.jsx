@@ -9,7 +9,7 @@ import {
 import Home from "./pages/Home";
 
 // styles
-import "./App.css";
+import "./App.scss";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(<Route path="/" element={<Home />}></Route>)

@@ -17,7 +17,17 @@ const getAllData = async (req, res) => {
 
 // GET SINGLE data
 const getSingleData = async (req, res) => {
-  res.status(200).json({ message: "GET SINGLE data" });
+  const id = parseInt(req.params.id);
+  const sql = `SELECT * FROM ${testTable} where id = ${id}`;
+
+  db.query(sql, (err, results) => {
+    if (err) {
+      console.error("MySQL query error:", err);
+      res.status(500).send("Internal Server Error");
+    } else {
+      res.json(results);
+    }
+  });
 };
 
 // CREATE data
@@ -32,7 +42,23 @@ const updateData = async (req, res) => {
 
 // DELETE data
 const deleteData = async (req, res) => {
-  res.status(200).json({ message: "DELETE data" });
+  const id = parseInt(req.params.id);
+  const sql = `DELETE FROM ${testTable} where id = ${id}`;
+
+  db.query(sql, (err, results) => {
+    if (err) {
+      console.error("MySQL query error:", err);
+      res.status(500).send("Internal Server Error");
+    } else {
+      res.json(results);
+    }
+  });
 };
 
-module.exports = { getAllData, getSingleData, createData, updateData, deleteData };
+module.exports = {
+  getAllData,
+  getSingleData,
+  createData,
+  updateData,
+  deleteData,
+};

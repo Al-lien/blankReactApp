@@ -12,7 +12,7 @@ import Home from "./pages/Home";
 import "./App.css";
 function App() {
   const router = createBrowserRouter(
-    createRoutesFromElements(<Route path="/" element={<Home />} />)
+    createRoutesFromElements(<Route path="/" element={<Home />}></Route>)
   );
 
   return (

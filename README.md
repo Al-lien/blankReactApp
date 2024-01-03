@@ -29,21 +29,21 @@ You'll find all instructions and links below.
 - [React-router-dom](https://www.npmjs.com/package/react-router-dom)
 - [MySQL2](https://www.npmjs.com/package/mysql2)
 - [Mongoose](https://www.npmjs.com/package/mongoose)
+- [Sass](https://www.npmjs.com/package/sass)
 
 ## Frontend
 
 - Clean `App.jsx`
     - including homepage route using [react-router-dom](https://reactrouter.com/en/main)
-- `App.css` reset
-- Custom [Sass](https://github.com/sass/sass) properties & utilities
-    - Sass isn't included in this project. Install it `npm install sass` or use vscode extension like [Live Sass Compiler](https://github.com/glenn2223/vscode-live-sass-compiler)\
-    <sub><sup>( I recommend the first option )</sup></sub>
-    -  .gitignore containing `**.css.map`
+- `App.scss` reset
+- Custom [Sass](https://github.com/sass/sass) properties & utilities `.styles/_utilities.scss`
+    - Sass is included in this project. If you want to use vscode extension like [Live Sass Compiler](https://github.com/glenn2223/vscode-live-sass-compiler), or don't use it at all, feel free to `npm uninstall sass`.
+    -  .gitignore containing `**.css.map` <sub><sup>( in case of vscode extension )</sup></sub>
 - `pages`, `components`, `styles` directories.
 
 ## Backend 
 
-- server.js including express app, basic routes & middlewares
+- `server.js` including express app, basic routes & middlewares.
 - `routes` directory.
 
 ## Git

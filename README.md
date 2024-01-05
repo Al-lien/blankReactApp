@@ -16,10 +16,11 @@ You'll find all instructions and links below.
 - In **VSCode**, install plugins [Prettier - Code formatter](https://github.com/prettier/prettier-vscode) and [ESLint](https://github.com/Microsoft/vscode-eslint) and configure them.
 - Clone this repo, enter it.
 - Use `git checkout mysql` OR `git checkout mongodb` to access the setup you need.
-- Delete `.git` and initialize a new one (see below).
-- Run command `npm install`.
-- Run command `npm run dev` in each directory `backend` & `frontend`.
+- Run command `npm install` 🚨 **from root directory** 🚨.
 - Create environment files (`.env`) in both `backend` and `frontend`: you can copy `.env.sample` files as starters.
+- Run command `npm run dev` 🚨 **from root directory** 🚨.
+- Delete `.git` and initialize a new one (see below).
+
 
 ### Tools 🛠️
 
@@ -28,11 +29,13 @@ You'll find all instructions and links below.
 - [Nodemon](https://www.npmjs.com/package/nodemon)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
 - [React-router-dom](https://www.npmjs.com/package/react-router-dom)
-- [MySQL2](https://www.npmjs.com/package/mysql2)
-- [Mongoose](https://www.npmjs.com/package/mongoose)
+- [MySQL2](https://www.npmjs.com/package/mysql2) OR [Mongoose](https://www.npmjs.com/package/mongoose)
 - [Sass](https://www.npmjs.com/package/sass)
+- [Concurrently](https://www.npmjs.com/package/concurrently)
 
 ## Frontend
+
+#### What you'll find :
 
 - Clean `App.jsx`
     - including homepage route using [react-router-dom](https://reactrouter.com/en/main)
@@ -57,25 +60,25 @@ You'll find all instructions and links below.
 
 ### Init GIT 🚀
 
-- `git init -b main`
-<!-- initialize git on main branch -->
+1. `git init -b main`
+2. `git add .`
+3. `git commit -m (<YOUR_MESSAGE_HERE>)`
 
-### Reset GIT
+#### Reset Remote Repository
 
 [Managing remote repositories](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
 
 [Adding locally hosted code to GitHub](https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github)
 
-- `git remote add origin <NEW_REMOTE_URL>`
+1. `git remote add origin <NEW_REMOTE_URL>`
 <!-- set a new remote file -->
 
-- `git remote -v`
+2. `git remote -v`
 <!-- Verify new remote -->
 > should show 👉 `origin <NEW_REMOTE_URL> (fetch)`\
 > should show 👉 `<NEW_REMOTE_URL> (push)`
 
+3. `git remote add origin <REMOTE-URL>`
+4. `git push -u origin main`
+
 Check this amazing tuto, on [Git & Github](https://youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&si=MrwPuJGcRTkmewyQ).
-
-
-
-

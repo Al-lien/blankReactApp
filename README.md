@@ -18,6 +18,7 @@ You'll find all instructions and links below.
 - Use `git checkout mysql` OR `git checkout mongodb` to access the setup you need.
 - Delete `.git` and initialize a new one (see below).
 - Run command `npm install`.
+- Run command `npm run dev` in each directory `backend` & `frontend`.
 - Create environment files (`.env`) in both `backend` and `frontend`: you can copy `.env.sample` files as starters.
 
 ### Tools 🛠️

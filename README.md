@@ -43,7 +43,7 @@ You'll find all instructions and links below.
 - Custom [Sass](https://github.com/sass/sass) properties & utilities `.styles/_utilities.scss`
     - Sass is included in this project. If you want to use vscode extension like [Live Sass Compiler](https://github.com/glenn2223/vscode-live-sass-compiler), or don't use it at all, feel free to `npm uninstall sass`.
     -  .gitignore containing `**.css.map` <sub><sup>( in case of vscode extension )</sup></sub>
-- `pages`, `components`, `styles` directories.
+- `pages`, `components`, `styles` & `hooks` directories.
 
 ## Backend 
 

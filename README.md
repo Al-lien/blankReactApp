@@ -15,6 +15,7 @@ You'll find all instructions and links below.
 
 - In **VSCode**, install plugins [Prettier - Code formatter](https://github.com/prettier/prettier-vscode) and [ESLint](https://github.com/Microsoft/vscode-eslint) and configure them.
 - Clone this repo, enter it.
+- **If you do not need a backend setup** simply run `npm install` from the root directory and skip the next two steps.
 - Use `git checkout mysql` OR `git checkout mongodb` to access the setup you need.
 - Run command `npm install` 🚨 **from root directory** 🚨.
 - Create environment files (`.env`) in both `backend` and `frontend`: you can copy `.env.sample` files as starters.

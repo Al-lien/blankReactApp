@@ -78,7 +78,6 @@ You'll find all instructions and links below.
 > should show 👉 `origin <NEW_REMOTE_URL> (fetch)`\
 > should show 👉 `<NEW_REMOTE_URL> (push)`
 
-3. `git remote add origin <REMOTE-URL>`
-4. `git push -u origin main`
+3. `git push -u origin main`
 
 Check this amazing tuto, on [Git & Github](https://youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&si=MrwPuJGcRTkmewyQ).

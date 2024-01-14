@@ -20,7 +20,7 @@ app.use(
 app.use(express.json());
 /* console.log path and request type  */
 app.use((req, res, next) => {
-  console.log(req.path, req.method);
+  console.info(req.path, req.method);
   next();
 });
 
@@ -33,9 +33,9 @@ mongoose
   .then(() => {
     // 👇 listen for request
     app.listen(process.env.PORT, () => {
-      console.log("Listening on port", process.env.PORT);
+      console.info("Listening on port", process.env.PORT);
     });
   })
   .catch((error) => {
-    console.log(error);
+    console.info(error);
   });

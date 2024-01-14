@@ -22,7 +22,7 @@ const getSingleData = async (req, res) => {
     return res.status(404).json({ error: "No such basic" });
   }
 
-  res.status(200).json(basic);
+  return res.status(200).json(basic);
 };
 
 // CREATE data
@@ -51,7 +51,7 @@ const updateData = async (req, res) => {
     return res.status(400).json({ error: "No such basic" });
   }
 
-  res.status(200).json(basic);
+  return res.status(200).json(basic);
 };
 
 // DELETE data
@@ -68,7 +68,7 @@ const deleteData = async (req, res) => {
     return res.status(404).json({ error: "No such basic" });
   }
 
-  res.status(200).json(basic);
+  return res.status(200).json(basic);
 };
 
 module.exports = {

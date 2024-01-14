@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "eslint": "^8.46.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "3.0.0"
+  },
+  "lint-staged": {
+    "*.sql": "prettier --check",
+    "*.js": "eslint"
+  }
+}

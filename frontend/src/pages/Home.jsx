@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 function Home() {
   const [data, setData] = useState(null);
 
@@ -28,3 +26,4 @@ function Home() {
 }
 
 export default Home;
+

@@ -89,3 +89,11 @@ module.exports = {
   updateData,
   deleteData,
 };
+
+
+
+
+
+
+
+

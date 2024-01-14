@@ -1,5 +1,6 @@
-const Basic = require("../models/basicModel");
 const mongoose = require("mongoose");
+
+const Basic = require("../models/basicModel");
 
 // GET ALL data
 const getAllData = async (req, res) => {

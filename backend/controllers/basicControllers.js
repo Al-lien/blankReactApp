@@ -1,4 +1,5 @@
 const db = require("../db/db");
+
 const testTable = process.env.TEST_TABLE;
 
 // GET ALL data
@@ -16,7 +17,7 @@ const getAllData = async (req, res) => {
 
 // GET SINGLE data
 const getSingleData = async (req, res) => {
-  const id = parseInt(req.params.id);
+  const id = parseInt(req.params.id, 10);
   const sql = `SELECT * FROM ${testTable} WHERE id = ?`;
 
   try {
@@ -44,7 +45,7 @@ const createData = async (req, res) => {
 
 // UPDATE data
 const updateData = async (req, res) => {
-  const id = parseInt(req.params.id);
+  // const id = parseInt(req.params.id, 10);
   // const { values, ..., ... } = req.body;
   // const sql = `UPDATE ${testTable} SET values = ?, ... = ?, ... = ? WHERE id = ?`;
 
@@ -65,7 +66,7 @@ const updateData = async (req, res) => {
 
 // DELETE data
 const deleteData = async (req, res) => {
-  const id = parseInt(req.params.id);
+  const id = parseInt(req.params.id, 10);
   const sql = `DELETE FROM ${testTable} WHERE id = ?`;
 
   try {
@@ -89,11 +90,3 @@ module.exports = {
   updateData,
   deleteData,
 };
-
-
-
-
-
-
-
-

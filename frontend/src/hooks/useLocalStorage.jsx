@@ -3,7 +3,7 @@ const useLocalStorage = (key) => {
     try {
       window.localStorage.setItem(key, JSON.stringify(value));
     } catch (error) {
-      console.error(error);
+      console.log(error);
     }
   };
 

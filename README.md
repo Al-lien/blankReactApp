@@ -15,7 +15,7 @@ You'll find all instructions and links below.
 
 - In **VSCode**, install plugins [Prettier - Code formatter](https://github.com/prettier/prettier-vscode) and [ESLint](https://github.com/Microsoft/vscode-eslint) and configure them.
 - Clone this repo, enter it.
-- **If you do not need a backend setup** simply run `npm install` from the root directory and skip the next two steps.
+- **If you do not need a backend setup** simply run `npm install` from the root directory and skip the following two steps.
 - Use `git checkout mysql` OR `git checkout mongodb` to access the setup you need.
 - Run command `npm install` 🚨 **from root directory** 🚨.
 - Create environment files (`.env`) in both `backend` and `frontend`: you can copy `.env.sample` files as starters.
@@ -33,6 +33,8 @@ You'll find all instructions and links below.
 - [MySQL2](https://www.npmjs.com/package/mysql2) OR [Mongoose](https://www.npmjs.com/package/mongoose)
 - [Sass](https://www.npmjs.com/package/sass)
 - [Concurrently](https://www.npmjs.com/package/concurrently)
+- [Husky](https://www.npmjs.com/package/husky) 🐶
+- [Eslint](https://www.npmjs.com/package/eslint)
 
 ## Frontend
 
@@ -42,7 +44,7 @@ You'll find all instructions and links below.
     - including homepage route using [react-router-dom](https://reactrouter.com/en/main)
 - `App.scss` reset
 - Custom [Sass](https://github.com/sass/sass) properties & utilities `.styles/_utilities.scss`
-    - Sass is included in this project. If you want to use vscode extension like [Live Sass Compiler](https://github.com/glenn2223/vscode-live-sass-compiler), or don't use it at all, feel free to `npm uninstall sass`.
+    - **Sass is included** in this project. If you want to use vscode extension like [Live Sass Compiler](https://github.com/glenn2223/vscode-live-sass-compiler), or don't use it at all, feel free to `npm uninstall sass`.
     -  .gitignore containing `**.css.map` <sub><sup>( in case of vscode extension )</sup></sub>
 - `pages`, `components`, `styles` & `hooks` directories.
 
@@ -82,3 +84,7 @@ You'll find all instructions and links below.
 3. `git push -u origin main`
 
 Check this amazing tuto, on [Git & Github](https://youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&si=MrwPuJGcRTkmewyQ).
+
+
+
+

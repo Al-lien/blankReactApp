@@ -1,5 +1,7 @@
+import React from "react";
+
 function Components() {
-    return;
+  return <div>Components</div>;
 }
 
 export default Components;

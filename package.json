@@ -4,10 +4,9 @@
   "description": "(**In progress**, still working on it...)",
   "main": "index.js",
   "scripts": {
+    "postinstall": "husky install && cd ./frontend && npm install && cd ../backend && npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "lint-staged",
-    "install": "cd ./frontend && npm install",
-    "dev": "cd ./frontend && npm run dev"
+    "lint": "lint-staged"
   },
   "keywords": [],
   "author": "",

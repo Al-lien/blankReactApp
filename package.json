@@ -4,7 +4,7 @@
   "description": "(**In progress**, still working on it...)",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"cd ./backend && npm run dev\" \"cd ./frontend && npm run dev\"",
+    "dev": "concurrently \"cd ./frontend && npm run dev\"",
     "postinstall": "husky install && cd ./frontend && npm install && cd ../backend && npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "lint-staged"

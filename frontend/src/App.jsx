@@ -10,16 +10,13 @@ import Home from "./pages/Home";
 
 // styles
 import "./App.scss";
+
 function App() {
   const router = createBrowserRouter(
-    createRoutesFromElements(<Route path="/" element={<Home />}></Route>)
+    createRoutesFromElements(<Route path="/" element={<Home />} />)
   );
 
-  return (
-    <>
-      <RouterProvider router={router} />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

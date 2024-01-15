@@ -8,7 +8,7 @@ function Home() {
       const json = await response.json();
 
       if (response.ok) {
-        console.info(json);
+        console.log(json);
       }
     };
     fetchData();

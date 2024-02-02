@@ -1,10 +1,10 @@
 const mysql = require("mysql2");
 
 const db = mysql.createConnection({
-  host: process.env.HOST,
-  user: process.env.USER_NAME,
-  password: process.env.PASSWORD,
-  database: process.env.DATABASE,
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER_NAME,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
 });
 
 db.connect((err) => {
@@ -12,7 +12,7 @@ db.connect((err) => {
     console.error("MySQL connection error:", err);
   } else {
     console.info(
-      `Welcome ${process.env.USER_NAME}, you're now connected to your MySQL local dabatase: ${process.env.DATABASE}`
+      `Welcome ${process.env.DB_USER_NAME}, you're now connected to your MySQL local dabatase: ${process.env.DB_NAME}`
     );
   }
 });

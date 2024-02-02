@@ -4,7 +4,9 @@ function Home() {
   useEffect(() => {
     const fetchData = async () => {
       // accord PORT consequently 👇
-      const response = await fetch("http://localhost:3000/api/basicRoutes");
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_URL}/api/basicRoutes`
+      );
 
       const json = await response.json();
 

@@ -1,6 +1,6 @@
 const db = require("../db/db");
 
-const testTable = process.env.TEST_TABLE;
+const testTable = process.env.DB_TEST_TABLE;
 
 // GET ALL data
 const getAllData = async (req, res) => {

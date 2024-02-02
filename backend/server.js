@@ -27,6 +27,6 @@ app.use((req, res, next) => {
 app.use("/api/basicRoutes", basicRoutes);
 
 // 👇 listen for request
-app.listen(process.env.PORT, () => {
-  console.info("Listening on port", process.env.PORT);
+app.listen(process.env.DB_PORT, () => {
+  console.info("Listening on port", process.env.DB_PORT);
 });
